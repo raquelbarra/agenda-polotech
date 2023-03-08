@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  font-family: poppins;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background: #201b2c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main h1 {
+  font-size: 42px;
+  color: #77ffc0;
+}
+
+.main h3 {
+  font-size: 36px;
+  color: #77ffc0;
+}
+
+.main p {
+  color: #fafafa;
+}
+
+.main a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #201b2c;
+  padding: 10px 10px;
+  margin: 28px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-family: poppins;
+  transition: .4s;
+  background: #00ff88;
+  cursor: pointer;
+}
+
+.main a:hover {
+  transform: scale(1.05);
+  background: #fff;
+}
