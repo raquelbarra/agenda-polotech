@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+}
+
+.main-login {
+  width: 100vw;
+  height: 100vh;
+  background: #201b2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-login h1 {
+  color: #77ffc0;
+  font-family: poppins;
+  line-height: 40px;
+}
+
+.right-login {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-login h1 {
+  color: #77ffc0;
+  font-family: poppins;
+  line-height: 40px;
+  margin-bottom: 48px;
+}
+
+.card-login {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  background: #2f2841;
+  border-radius: 20px;
+  box-shadow: 0px 5px 45px;
+}
+
+.card-login h2 {
+  color: #00ff88;
+  font-weight: 800;
+  margin: 0;
+  font-family: poppins;
+}
+
+.textfield {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.textfield input {
+  width: 100%;
+  border: none;
+  padding: 6px;
+  background: #514869;
+  color: #f0ffffde;
+  font-size: 10pt;
+  font-family: poppins;
+  box-shadow: 0px 5px 35px #00000056;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.textfield label {
+  width: 100%;
+  color: #f0ffffde;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-family: poppins;
+  font-size: 14px;
+}
+
+.textfield input::placeholder {
+  color: rgba(220, 220, 220, 0.418)
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  width: 100%;
+  color: #f0ffffde;
+  font-size: 10pt;
+  font-family: poppins;
+  box-sizing: border-box;
+}
+
+.radio .salvar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.radio .nao-salvar {
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 10px 0px;
+  margin: 28px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-family: poppins;
+  transition: .4s;
+  background: #00ff88;
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  transform: scale(1.05);
+  background: #fff;
+}
+
+span {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.cadastrar {
+  font-family: poppins;
+  font-size: 14px;
+  color: #fafafa;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.cadastrar:hover {
+  transform: scale(1.05);
+}
