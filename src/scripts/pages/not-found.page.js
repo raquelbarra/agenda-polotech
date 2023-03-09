@@ -39,7 +39,7 @@ const events = () => {
 export const NotFound = () => {
     notFound.innerHTML = `
     <div class="main">
-        <h1>Ops! Página não encontrada.</h1>
+        <h1>Ops! Página não encontrada!</h1>
         <h3>Erro 404</h3>
 
         <p>Você será redirecionado em <em>${secondsToRedirect}</em></p>

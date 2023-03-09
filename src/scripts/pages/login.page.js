@@ -13,12 +13,11 @@ const events = () => {
 }
 
 export const Login = () => {
-    const nome = "Dannyel"
 
     login.innerHTML = `
     <div class="main-login">
         <div class="right-login">
-            <h1><span>Olá, ${nome}! </span><br> Acesse com seus dados!</h1>
+            <h1>Acesse agora!</h1>
             <div class="card-login">
                 <h2>Login</h2>
                 <div class="textfield">
