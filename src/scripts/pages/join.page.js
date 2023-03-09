@@ -1,10 +1,42 @@
+import { createUser } from "../services/user.service"
+
 const join = document.createElement('form')
+join.setAttribute("id", "p-signup")
+
+const events = () => {
+    join.addEventListener('submit', (e) => {
+        e.preventDefault()
+
+        const fd = new FormData(join)
+        const data = Object.fromEntries(fd)
+
+        createUser(data)
+            .then((response) => {
+                const msgError = join.querySelector("#msgError")
+
+                if(response.status === 409) {
+                    msgError.innerText = response.mensagem
+                    msgError.classList.remove('d-none');
+                }
+                
+                if(response.status === 200) {
+                    window.location.href = "/#login"
+                }
+            })
+            .catch((error) => {
+                console.error(error)
+            })
+    })
+}
 
 export const Join = () => {
 join.innerHTML = `
     <div class="main-cadastro">
         <div class="left-cadastro">
-            <h1><span>Não possui cadastro?</span><br> Preencha o formulário ao lado! &rarr;</h1>
+            <div>
+                <h1><span>Não possui cadastro?</span><br> Preencha o formulário ao lado! &rarr;</h1>
+                <div class="alert-error d-none" id="msgError"></div>
+            </div>
         </div>
         <div class="right-cadastro">
             <div class="card-cadastro">
@@ -18,8 +50,8 @@ join.innerHTML = `
                     <input type="password" name="senha" placeholder="Escolha uma senha">
                 </div>
                 <div class="textfield">
-                    <label for="usuario">Nome de Usuário</label>
-                    <input type="text" name="usuario" placeholder="Escolha um nome de usuário">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" placeholder="Informe seu nome">
                 </div>
 
                 <button class="btn-cadastrar">Cadastrar</button>
@@ -28,6 +60,8 @@ join.innerHTML = `
         </div>
     </div> 
 `
+
+events()
 
 return join
 }

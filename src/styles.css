@@ -2,3 +2,12 @@
 @import url(./styles/login.page.css);
 @import url(./styles/not-found.page.css);
 @import url(./styles/join.page.css);
+
+* {
+    margin: 0;
+    font-family: poppins;
+}
+
+.d-none {
+    display: none;
+}
