@@ -52,6 +52,7 @@
 
 #f-contact .text-field {
     padding: 10px;
+    width: 100%;
 }
 
 #f-contact .text-field > label {
@@ -81,7 +82,6 @@
     border: none;
     border-radius: 8px;
     outline: none;
-    margin: 28px;
     padding: 10px 0;
     font-family: poppins;
     transition: all .4s;

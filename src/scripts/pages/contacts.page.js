@@ -41,7 +41,7 @@ function renderContact(contactsValue) {
     } else {
         let msg = document.createElement('h5');
         msg.classList.add('inform');
-        msg.innerHTML = `Não há contato disponível. <br> Cadastre seu primeiro contado <a href="/#contact-create"> clicando aqui!</a>
+        msg.innerHTML = `Não há contato disponível. <br> Cadastre seu primeiro contado <a href="/#contact-create"> clicando aqui!</a> <br>
         <img src=${nomonkey} class="img-no-results">`;
         cards.append(msg);
     }
