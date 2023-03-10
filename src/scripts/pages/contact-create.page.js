@@ -64,7 +64,9 @@ export const CreateContact = () => {
             <label for="email">E-mail</label>
             <input type="text" name="email" placeholder="Informe o e-mail">
         </div>
-        <button class="btn-plus">Cadastrar</button>
+        <div class="text-field">
+            <button class="btn-plus">Cadastrar</button>
+        </div>
     </div>
     <div class='img-create'>
         <img src=${rmonkey} >
