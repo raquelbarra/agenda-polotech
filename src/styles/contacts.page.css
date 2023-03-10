@@ -1,0 +1,91 @@
+body {
+    background-color: #201b2c;
+}
+
+#p-contacts h1 {
+    color: #77ffc0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#cards .inform {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#cards .inform a {
+    text-decoration: none;
+    color: #9d5e1c;;
+}
+
+#cards .inform a:hover {
+    text-decoration: none;
+    color: #14654f;
+}
+
+#p-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+#cards {
+    margin: 30px;
+    padding: 20px;
+    background: #2e2740;
+    border-radius: 20px;
+    width: 40%;
+    text-align: center;
+}
+
+#cards #c-card-contact {
+    color: white;
+    margin-bottom: 20px;
+    background: #615a724a;
+    padding: 10px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+#c-card-contact h3 {
+    margin-bottom: 10px;
+}
+
+#c-card-contact a {
+    text-decoration: none;
+    padding: 8px;
+    background: #2f2841;
+    border-radius: 10px;
+    color: white;
+    font-size: .8em;
+    transition: all .4s;
+}
+
+#c-card-contact a:hover {
+    background: #00fe87;
+    color: black;
+    transform: scale(1.05);
+}
+
+#c-card-contact img {
+    width:70px;
+}
+
+.img-no-results {
+    width: 150px;
+}
+
+@media only screen and (max-width: 60em)  {
+
+    #cards {
+        width: 80%;
+    }
+}

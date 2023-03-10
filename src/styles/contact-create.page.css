@@ -1,0 +1,123 @@
+#p-create-contacts h1 {
+    color: #0f8;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#p-create-contacts a {
+    background: #2f2841;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    transition: all .4s;
+}
+
+#p-create-contacts a:hover {
+    background: #0f8;
+    color: black;
+}
+
+.alert-success {
+    color: #0f8;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.alert-error {
+    color: #ff6000;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#f-contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+#f-contact > .card-form {
+    background: #2f2841;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 35px;
+    display: flex;
+    box-shadow: 0 5px 45px;
+}
+
+#f-contact .text-field {
+    padding: 10px;
+}
+
+#f-contact .text-field > label {
+    color: #f0ffffde;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: poppins;
+    font-size: 14px;
+}
+
+#f-contact .text-field > input {
+    color: #f0ffffde;
+    box-sizing: border-box;
+    background: #514869;
+    border: none;
+    outline: none;
+    padding: 6px;
+    font-family: poppins;
+    font-size: 10pt;
+}
+
+#f-contact .btn-plus {
+    width: 100%;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: #0f8;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    margin: 28px;
+    padding: 10px 0;
+    font-family: poppins;
+    transition: all .4s;
+}
+
+#f-contact .btn-plus:hover {
+    background: #fff;
+    transform: scale(1.05);
+}
+
+#p-create-contacts .card-form {
+    width: 90%;
+    background: #2f2841;
+    border-radius: 20px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 35px;
+    display: flex;
+    box-shadow: 0 5px 45px;
+}
+
+.img-create {
+    text-align: center
+}
+
+.img-create img {
+    width: 300px;
+}
+
+@media only screen and (max-width: 60em)  {
+    #f-contact > .card-form {
+        flex-direction: column;
+    }
+
+    #f-contact .text-field {
+        display: flex;
+        flex-direction: column;
+    }
+}
