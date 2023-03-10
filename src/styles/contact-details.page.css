@@ -1,0 +1,47 @@
+#p-contact-details h1 {
+    color: #77ffc0;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#p-contact-details a {
+    background: #2f2841;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    transition: all .4s;
+}
+
+#p-contact-details a:hover {
+    background: #0f8;
+    color: black;
+}
+
+.content {
+    background: #2f2841;
+    border-radius: 20px;
+    color: white;
+    justify-content: space-around;
+    padding: 30px 35px;
+    display: flex;
+    box-shadow: 0 5px 45px #2f2841;
+    margin: 20px;
+}
+
+.img-details {
+    text-align: center
+}
+
+.img-details img {
+    width: 300px;
+}
+
+@media only screen and (max-width: 60em)  {
+    .content {
+        flex-direction: column;
+    }
+}

@@ -10,7 +10,7 @@ const clear = () => {
     clearInterval(interval)
 }
 
-const contador = () => {
+const accountant = () => {
     const em = notFound.querySelector('em')
 
     clearInterval(interval)
@@ -26,14 +26,14 @@ const contador = () => {
     }, 1000)
 }
 
-const ancora = () => {
+const anchorA = () => {
     const anchor = notFound.querySelector('a')
     anchor.addEventListener('click', clear)
 }
 
 const events = () => {
-    contador()
-    ancora()
+    accountant()
+    anchorA()
 }
 
 export const NotFound = () => {

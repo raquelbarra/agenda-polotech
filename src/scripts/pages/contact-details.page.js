@@ -1,4 +1,5 @@
 import { Header } from "../components/header.component.js"
+import dmonkey from '../../imgs/monkey-details.png'
 
 const root = document.getElementById('root')
 const contactsDetails = document.createElement('div')
@@ -11,21 +12,20 @@ export const ContactDetails = () => {
     const contato = window.history.state
 
     contactsDetails.innerHTML = `
+
+        <h1> Detalhes do contato </h1>
+
         <a href="/#contacts">Voltar para contatos</a>
 
-        <br>
-        <p><b>Nome:</b>${contato.nome}</p>
-        <p><b>E-mail:</b>${contato.email}</p>
-        <h3>Telefone</h3>
+        <div class="content">
+            <p><b>Nome:</b> ${contato.nome}</p>
+            <p><b>E-mail:</b> ${contato.email}</p>
+            <p><b>Telefone:</b> ${contato.telefones[0].numero}</p>
+        </div>
+        <div class='img-details'>
+            <img src=${dmonkey}>
+        </div>
         `
-
-    contato.telefones.forEach((telefone) => {
-        contactsDetails.innerHTML += `
-            <hr>
-            <p>${telefone.tipo}</p>        
-            <p>${telefone.numero}</p>        
-        `
-    })
 
     return contactsDetails
 }

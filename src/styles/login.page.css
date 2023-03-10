@@ -7,13 +7,7 @@
   align-items: center;
 }
 
-.left-login h1 {
-  color: #77ffc0;
-  font-family: poppins;
-  line-height: 40px;
-}
-
-.right-login {
+.login {
   width: 50vw;
   height: 100vh;
   display: flex;
@@ -22,7 +16,7 @@
   align-items: center;
 }
 
-.right-login h1 {
+.login h1 {
   color: #77ffc0;
   font-family: poppins;
   line-height: 40px;
@@ -46,6 +40,10 @@
   font-weight: 800;
   margin: 0;
   font-family: poppins;
+}
+
+.card-login img {
+  width:80px
 }
 
 .textfield {
@@ -82,32 +80,6 @@
   color: rgba(220, 220, 220, 0.418)
 }
 
-.radio {
-  display: flex;
-  align-items: center;
-  margin-top: 24px;
-  width: 100%;
-  color: #f0ffffde;
-  font-size: 10pt;
-  font-family: poppins;
-  box-sizing: border-box;
-}
-
-.radio .salvar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4px;
-}
-
-.radio .nao-salvar {
-  margin-left: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4px;
-}
-
 .btn-login {
   width: 100%;
   padding: 10px 0px;
@@ -132,7 +104,7 @@ span {
   line-height: 50px;
 }
 
-.cadastrar {
+.register {
   font-family: poppins;
   font-size: 14px;
   color: #fafafa;
@@ -140,6 +112,20 @@ span {
   transition: .3s;
 }
 
-.cadastrar:hover {
+.register:hover {
   transform: scale(1.05);
+}
+
+small {
+  font-size: .7em;
+  margin-top: 5px;
+  color: #878080;
+}
+
+@media only screen and (max-width: 60em)  {
+
+    .login {
+      width: 100%;
+    }
+
 }

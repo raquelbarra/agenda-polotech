@@ -1,38 +1,43 @@
-.main-cadastro {
+.main-register {
     width: 100vw;
     height: 100vh;
     background: #201b2c;
     display: flex;
 }
 
-.left-cadastro {
+.left-register {
     width: 50vw;
     height: 100vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    text-align: center;
 }
 
-.left-cadastro h1 {
+.left-register h1 {
     font-size: 36px;
     color: #77ffc0;
     font-family: poppins;
     line-height: 48px;
 }
 
-.left-cadastro span {
+.left-register span {
     font-size: 46px;
 }
 
-.right-cadastro {
-    width: 60vw;
+.left-register img {
+    width:150px
+}
+
+.right-register {
+    width: 50vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.card-cadastro {
+.card-register {
     width: 40%;
     display: flex;
     justify-content: center;
@@ -44,7 +49,7 @@
     box-shadow: 0px 5px 45px;
 }
 
-.card-cadastro h2 {
+.card-register h2 {
     color: #00ff88;
     font-weight: 800;
     margin: 0;
@@ -85,7 +90,7 @@
     color: rgba(220, 220, 220, 0.418)
 }
 
-.btn-cadastrar {
+.btn-register {
     width: 100%;
     padding: 10px 0px;
     margin: 28px;
@@ -99,12 +104,12 @@
     cursor: pointer;
 }
 
-.btn-cadastrar:hover {
+.btn-register:hover {
     transform: scale(1.05);
     background: #fff;
 }
 
-.voltar {
+.btnBackLogin {
     font-family: poppins;
     font-size: 14px;
     color: #fafafa;
@@ -123,4 +128,10 @@
     color: white;
     font-weight: bold;
     text-align: center;
+}
+
+small {
+    font-size: .7em;
+    margin-top: 5px;
+    color: #878080;
 }

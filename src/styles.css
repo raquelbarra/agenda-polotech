@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
 @import url(./styles/login.page.css);
+@import url(./styles/contacts.page.css);
+@import url(./styles/contact-create.page.css);
+@import url(./styles/contact-details.page.css);
 @import url(./styles/not-found.page.css);
 @import url(./styles/join.page.css);
+@import url(./styles/header.component.css);
+@import url(./styles/spinner.css);
+
 
 * {
     margin: 0;

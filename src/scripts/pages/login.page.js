@@ -1,4 +1,5 @@
 import { signin } from "../services/auth.service"
+import bmonkey from '../../imgs/ballon-monkey.png'
 
 const login = document.createElement('form')
 login.setAttribute("id", "p-login")
@@ -25,20 +26,22 @@ export const Login = () => {
 
     login.innerHTML = `
     <div class="main-login">
-        <div class="right-login">
+        <div class="login">
             <h1>Acesse agora!</h1>
             <div class="card-login">
+                <img src=${bmonkey}>
                 <h2>Login</h2>
                 <div class="textfield">
                     <label for="email">E-mail</label>
-                    <input type="text" name="email" placeholder="Digite seu e-mail">
+                    <input type="email" name="email" placeholder="Digite seu e-mail">
                 </div>
                 <div class="textfield">
                     <label for="senha">Senha</label>
                     <input type="password" name="senha" placeholder="Digite sua senha">
                 </div>
-                <button class="btn-login" id="btn-entrar">Acessar</button>
-                <a href="#join" class="cadastrar">Ou cadastre-se agora</a>
+                <button class="btn-login">Acessar</button>
+                <a href="#join" class="register">Ou cadastre-se agora</a>
+                <small>&copy; 2023 Banana Company</small>
             </div>
         </div>
     </div>  

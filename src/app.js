@@ -6,6 +6,7 @@ import { CreateContact } from './scripts/pages/contact-create.page.js'
 import { ContactDetails } from './scripts/pages/contact-details.page.js'
 
 function redirectPage() {
+    const body = document.querySelector('body');
     const root = document.querySelector('#root')
 
     const Router = {
@@ -30,9 +31,25 @@ function redirectPage() {
         window.location.href = "/#login"
         return
     }
+    
+    root.classList.add('d-none');
+   
+    const loadSpinner = document.createElement("div");
+    const spinner = document.createElement("div");
+    loadSpinner.classList.add('load');
+    spinner.classList.add('spinner');
+    loadSpinner.append(spinner);
+    body.append(loadSpinner);
+    loadSpinner.classList.remove('d-none');
 
     root.innerHTML = null
     root.append(route.component())
+
+    setTimeout(() => {
+        root.classList.remove('d-none');
+        loadSpinner.classList.add('d-none');
+    }, 1000);
+    
 }
 
 window.addEventListener('load', () => {
